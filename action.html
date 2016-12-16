@@ -19,8 +19,7 @@
 		return Math.floor(Math.random() * (max - min + 1)) + min;
 	}
 	function red(h) {
-		var l = 'http://' + h + '/search' + window.location.search
-				+ '&hl=zh-CN';
+		var l = 'http://' + h + '/search' + window.location.search;
 		window.location = l;
 		$('#cont').attr('href', l).show();
 	}
